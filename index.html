@@ -3,24 +3,26 @@
 <head>
 	<title>Mirtha's Latin Cafe</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<nav class="navbar navbar-default">
-	  	<div class="container-fluid">
-		    <div class="navbar-header">
-		      	<a class="navbar-brand" href="#">Brand</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      	<ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Menu</a></li>
-			        <li><a href="#">Location</a></li>
-			        <li><a href="#">Hours</a></li>
-			        <li><a href="#">Contact</a></li>
-		      	</ul>
-		    </div>
-	  	</div>
-	</nav>
-<div>
+<nav class="navbar navbar-default">
+  	<div class="container-fluid">
+	    <div class="navbar-header">
+	      	<a class="navbar-brand" href="#">Brand</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      	<ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Menu</a></li>
+		        <li><a href="#">Location</a></li>
+		        <li><a href="#">Hours</a></li>
+		        <li><a href="#">Contact</a></li>
+	      	</ul>
+	    </div>
+  	</div>
+</nav>
+<div class="container">
+	<div>
 	<!-- Put a background image here -->
 		<h1>Mirtha's Latin Cafe</h1>
 		<p>Mirtha's is what you get when you mix a Dominican and a Polk County native. 
@@ -29,10 +31,10 @@ We are a family run restaurant in the town of Dundee. We proudly serve our delic
 	<div>
 	<!-- Nav tabs -->
 	<!-- Not very D.R.Y. Refactor! -->
+		<h2>Menu</h2>
 		<ul class="nav nav-tabs" role="tablist">
   			<li role="presentation" class="active">
   				<a href="#menu1" data-toggle="tab">Meals</a>
-
   			</li>
   			<li role="presentation">
   				<a href="#menu2" data-toggle="tab">Sides</a>
@@ -163,16 +165,19 @@ We are a family run restaurant in the town of Dundee. We proudly serve our delic
 			</div>
 		</div>
 	</div>
-
-	<div>
-
-</div>
-	<div>Location/Hours
-		<div>Location map goes here. To the left!</div>
-		<div>Address goes here. To the right. Hours information will go *immediately* under this.</div>
+	<div class="row">
+		<h2>Where are we?</h2>
+		<div class="location">Location map goes here. To the left!</div>
+		<div class="address">Address goes here. To the right. Hours information will go *immediately* under this.</div>
 	</div>
-	<div>Contact</div>
-	<script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<div>
+		<h2>Contact us!</h2>
+		<p>Phone:</p>
+		<p>Email:</p>
+		<p>Facebook:</p>
+	</div>
+</div>
+<script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+.location{
+	width: 30em;
+	height: 30em;
+	background: green;
+	float: left;
+}
+
+.address{
+	width: 30em;
+	height: 30em;
+	background: yellow;
+	float: left;
+}
