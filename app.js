@@ -45,15 +45,183 @@ var meals = [
 		image: ""
 	},	
 ];
-// Will need to do multiple times. Function.
-mealList = "";
 
-// Will have to do this multiple times. Make into a global function.
-meals.forEach(function(meal){
-	mealList += "<li>" + "<p>" + meal.name + "<span> " + meal.price + " </span>" + "</p>"
-					+ "<p> " + meal.description + " </p>" + "</li>";
-});
+var sandwiches = [
+	{
+		name: "Cuban",
+		price: "$7.99",
+		description: "Pork, Ham, Swiss, Pickles, & Mustard",
+		image: ""
+	},
+	{
+		name: "1/2 Cuban",
+		price: "$4.00",
+		description: "Pork, Ham, Swiss, Pickles & Mustard",
+		image: ""
+	},
+	{
+		name: "Pork Sandwich",
+		price: "$7.49",
+		description: "",
+		image: ""
+	},
+	{
+		name: "1/2 Cuban",
+		price: "$3.75",
+		description: "",
+		image: ""
+	}
+];
+
+var sides = [
+	{
+		name: "Yellow or White Rice",
+		price: "$1.99",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Black or Kidney Beans",
+		price: "$1.99",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Plantain",
+		price: "$1.99",
+		description: "",
+		image: "",
+	},
+	{
+		name: "Churros",
+		price: "$2.25",
+		description: "Stuffed with cheddar and green chili",
+		image: ""
+	},
+	{
+		name: "Empanada",
+		price: "$1.50",
+		description: "beef/carne, chicken/pollo, or pork,lechon",
+		image: ""
+	},
+	{
+		name: "Pressed Cuban bread with butter",
+		price: "$1.25",
+		description: "",
+		image: ""
+	},
+];
+
+var desserts = [
+	{
+		name: "Guava Pastry",
+		price: "$2.25",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Coconut Custard topped with caramel",
+		price: "$1.99",
+		description: "",
+		image:  ""
+	},
+	{
+		name: "Bread Pudding",
+		price: "$2.49",
+		description: "",
+		image: ""
+	},
+];
+
+var drinks = [
+	{
+		name: "Water",
+		price: "$1.00",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Sweet or Unsweetened Tea",
+		price: "$1.25",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Soda",
+		price: "$1.25",
+		description: "Coke, Pepsi, y productos latinos",
+		image: ""
+	},
+	{
+		name: "Goya Nectar",
+		price: "$1.50",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Malta",
+		price: "$1.50",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Espresso",
+		price: "$1.00",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Lemonade",
+		price: "$1.25",
+		description: "",
+		image: ""
+	},
+];
+
+var kids = [
+	{
+		name: "Hot Dog",
+		price: "$2.99",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Macaroni & Cheese",
+		price: "$2.99",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Grilled Cheese",
+		price: "$2.99",
+		description: "",
+		image: ""
+	},
+	{
+		name: "Mozzarella Sticks",
+		price: "$5.50",
+		description: "",
+		image: ""
+	},
+];
+
+function populateMeal(food, foodTab){
+	var foodList = "";
+	// Will have to do this multiple times. Make into a global function.
+	food.forEach(function(meal){
+		foodList += "<li>" + "<p>" + meal.name + "<span> " + meal.price + " </span>" + "</p>"
+						+ "<p> " + meal.description + " </p>" + "</li>";
+	});	
+	foodTab.innerHTML = foodList;
+}
+
+populateMeal(meals, mealTab);
+populateMeal(sandwiches, sandwichTab);
+populateMeal(sides, sideTab);
+populateMeal(kids, additionalTab);
+populateMeal(drinks, drinkTab);
+populateMeal(desserts, dessertTab);
 
 
-// Should also be part of function.
-mealTab.innerHTML = mealList;
+// // Should also be part of function.
+// mealTab.innerHTML = mealList;
