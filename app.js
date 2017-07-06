@@ -219,8 +219,8 @@ function populateMeal(food, foodTab){
 	// Will have to do this multiple times. Make into a global function.
 	food.forEach(function(meal){
 		image = "<div class='col-xs-3'>" + "<img class='img-responsive' src='" + meal.image + "'></div>"
-		foodList += "<div class='row'><li class='col-sm-6'>" + image + "<div class='col-xs-9'>" + "<p>" + "<strong>" + meal.name + "</strong>" + "<span> " + meal.price + " </span>" + "</p>"
-						+ "<p> " + "<em>" +  meal.description + "</em>" + " </p>" + "</div>" + "</li></div>";
+		foodList += "<li class='col-sm-6'><div class='row'>" + image + "<div class='col-xs-9'>" + "<p>" + "<strong>" + meal.name + "</strong>" + "<span> " + meal.price + " </span>" + "</p>"
+						+ "<p> " + "<em>" +  meal.description + "</em>" + " </p>" + "</div>" + "</div></li>";
 	});
 	foodList += "</div>";
 	foodTab.innerHTML = foodList;
