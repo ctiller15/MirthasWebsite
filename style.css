@@ -1,13 +1,17 @@
+#main-menu{
+	height: 50em;
+}
+
 .location{
 	width: 30em;
-	height: 30em;
+	height: 25em;
 	background: green;
 	float: left;
 }
 
 .address{
 	width: 30em;
-	height: 30em;
+	height: 25em;
 	background: yellow;
 	float: left;
 }

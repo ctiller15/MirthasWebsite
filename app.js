@@ -9,39 +9,45 @@ var dessertTab = document.querySelector("#menu6 ul");
 
 var meals = [
 	{
-		name: "Picadillo Meal",
-		price: "$8.49",
-		description: "Ground Beef. Rice and beans included.",
+		name: "Dundee Bowl",
+		price: "$4.00",
+		description: "8oz bowl meat, rice, beans",
 		image: ""
 		},
 	{
-		name: "Pollo Guisado Meal",
+		name: "Stewed Chicken",
 		price: "$8.49",
-		description: "Stewed chicken. Rice and beans included.",
+		description: "Pollo Guisado",
+		image: "https://farm7.staticflickr.com/6228/6426997349_9e45122693.jpg"
+	},
+	{
+		name: "Beef Stew",
+		price: "$8.99",
+		description: "Carne Guisada",
 		image: ""
 	},
 	{
-		name: "Carne Guisada Meal",
+		name: "Ground Beef",
 		price: "$8.49",
-		description: "Stewed beef. Rice and beans included.",
+		description: "Carne Molida/Picadillo",
 		image: ""
 	},
 	{
-		name: "Lechon Meal",
+		name: "Chicken and Rice",
 		price: "$8.49",
-		description: "Ground Beef. Rice and beans included.",
+		description: "Arroz Con Pollo",
 		image: ""
 	},
 	{
-		name: "Arroz con Pollo Meal",
+		name: "Shredded Beef",
 		price: "$8.49",
-		description: "Chicken and rice. Rice and beans included.",
+		description: "Ropa Vieja",
 		image: ""
-	},
+	},	
 	{
-		name: "Ropa Vieja Meal",
-		price: "$8.49",
-		description: "Shredded Beef. Rice and beans included.",
+		name: "Roasted Pork",
+		price: "$8.99",
+		description: "Pernil/Lechon",
 		image: ""
 	},	
 ];
@@ -50,23 +56,23 @@ var sandwiches = [
 	{
 		name: "Cuban",
 		price: "$7.99",
-		description: "Pork, Ham, Swiss, Pickles, & Mustard",
+		description: "(Cubano/Medianoche), Pork, Ham, Swiss, Pickles, & Mustard",
 		image: ""
 	},
 	{
 		name: "1/2 Cuban",
 		price: "$4.00",
-		description: "Pork, Ham, Swiss, Pickles & Mustard",
+		description: "Cubano/Medianoche",
 		image: ""
 	},
 	{
 		name: "Pork Sandwich",
 		price: "$7.49",
-		description: "",
+		description: "Lechon en pan cubano",
 		image: ""
 	},
 	{
-		name: "1/2 Cuban",
+		name: "1/2 Pork Sandwich",
 		price: "$3.75",
 		description: "",
 		image: ""
@@ -77,19 +83,19 @@ var sides = [
 	{
 		name: "Yellow or White Rice",
 		price: "$1.99",
-		description: "",
+		description: "Arroz Amarillo o Blanco",
 		image: ""
 	},
 	{
 		name: "Black or Kidney Beans",
 		price: "$1.99",
-		description: "",
+		description: "Frijoles Negro o Habichuelas Coloradas",
 		image: ""
 	},
 	{
 		name: "Plantain",
 		price: "$1.99",
-		description: "",
+		description: "Maduros o Tostones",
 		image: "",
 	},
 	{
@@ -107,7 +113,7 @@ var sides = [
 	{
 		name: "Pressed Cuban bread with butter",
 		price: "$1.25",
-		description: "",
+		description: "Pan con mantequilla",
 		image: ""
 	},
 ];
@@ -116,19 +122,19 @@ var desserts = [
 	{
 		name: "Guava Pastry",
 		price: "$2.25",
-		description: "",
+		description: "Pastelito de Guayava",
 		image: ""
 	},
 	{
 		name: "Coconut Custard topped with caramel",
 		price: "$1.99",
-		description: "",
+		description: "Flan De Coco con caramelo",
 		image:  ""
 	},
 	{
 		name: "Bread Pudding",
 		price: "$2.49",
-		description: "",
+		description: "Pudin de Pan",
 		image: ""
 	},
 ];
@@ -182,25 +188,25 @@ var kids = [
 	{
 		name: "Hot Dog",
 		price: "$2.99",
-		description: "",
+		description: "Perro Caliente",
 		image: ""
 	},
 	{
 		name: "Macaroni & Cheese",
 		price: "$2.99",
-		description: "",
+		description: "Perro Caliente y Macarrones con Queso",
 		image: ""
 	},
 	{
 		name: "Grilled Cheese",
 		price: "$2.99",
-		description: "",
+		description: "Sandwich de Queso a la Plancha",
 		image: ""
 	},
 	{
 		name: "Mozzarella Sticks",
 		price: "$5.50",
-		description: "",
+		description: "Palitos de Queso",
 		image: ""
 	},
 ];
@@ -209,8 +215,8 @@ function populateMeal(food, foodTab){
 	var foodList = "";
 	// Will have to do this multiple times. Make into a global function.
 	food.forEach(function(meal){
-		foodList += "<li>" + "<p>" + meal.name + "<span> " + meal.price + " </span>" + "</p>"
-						+ "<p> " + meal.description + " </p>" + "</li>";
+		foodList += "<li class='col-md-6'>" + "<p>" + "<strong>" + meal.name + "</strong>" + "<span> " + meal.price + " </span>" + "</p>"
+						+ "<p> " + "<em>" +  meal.description + "<em>" + " </p>" + "</li>";
 	});	
 	foodTab.innerHTML = foodList;
 }
