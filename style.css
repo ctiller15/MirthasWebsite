@@ -15,3 +15,15 @@
 	background: yellow;
 	float: left;
 }
+
+ul{
+	list-style: none;
+}
+
+.availability{
+	width: 70%;
+}
+
+.right{
+	float: right;
+}
