@@ -1,28 +1,184 @@
 #main-menu{
 	height: 50em;
+	margin: 0 auto;
 }
 
 .location{
-	width: 30em;
+	max-width: 30em;
 	height: 25em;
 	background: green;
-	float: left;
+	margin: 0 auto;
 }
 
 .address{
-	width: 30em;
+	max-width: 30em;
 	height: 25em;
 	background: yellow;
-	float: left;
+	padding: 8% 0;
+	margin: 0 auto;
+}
+
+.availability{
+	width: 70%;
+	margin: auto 8%;
+}
+/*Testing out media queries to do the fine-tweaking on the responsive aspects.
+Find out how media queries work in terms of the cascade!
+
+A LOT of unncecessarily repeated code here. Refactor immediately!*/
+@media only screen and (min-width : 0px) and (max-width : 480px) {
+	li.col-sm-6{
+		height: 5em;
+		margin-top: 3px;
+	}
+	.col-xs-3 img{
+		max-height: 5em;
+	}
+	.availability{
+		width: 95%;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.location{
+		height: 27em;
+	}
+	.address{
+		padding: 0;
+		height: 27em;
+	}
+}
+
+@media only screen and (min-width : 481px) and (max-width : 640px) {
+	li.col-sm-6{
+		height: 6em;
+		margin-top: 3px;
+	}
+	.col-xs-3 img{
+		max-height: 5em;
+	}
+	.availability{
+		width: 95%;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.location{
+		height: 27em;
+	}
+	.address{
+		padding: 0;
+		height: 27em;
+	}
+}
+
+@media only screen and (min-width : 641px) and (max-width : 768px) {
+	#main-menu{
+		height: 35em;
+	}
+
+	li.col-sm-6{
+		height: 7em;
+		margin-top: 3px;
+	}
+	.col-xs-3 img{
+		max-height: 5em;
+	}
+	.availability{
+		width: 95%;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.location{
+		height: 24em;
+	}
+	.address{
+		padding: 0;
+		height: 24em;
+	}
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+	#main-menu{
+		height: 35em;
+	}
+
+	li.col-sm-6{
+		height: 7em;
+		margin-top: 3px;
+	}
+	.col-xs-3 img{
+		max-height: 5em;
+	}
+	.availability{
+		width: 95%;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.location{
+		height: 24em;
+	}
+	.address{
+		padding: 0;
+		height: 24em;
+	}
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1224px) {
+	#main-menu{
+		height: 35em;
+	}
+
+	li.col-sm-6{
+		height: 7em;
+		margin-top: 3px;
+	}
+	.col-xs-3 img{
+		max-height: 5em;
+	}
+	.availability{
+		width: 95%;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.location{
+		height: 24em;
+	}
+	.address{
+		padding: 0;
+		height: 24em;
+	}
+}
+
+@media only screen and (min-width : 1225px){
+	#main-menu{
+		height: 35em;
+	}
+
+	li.col-sm-6{
+		height: 7em;
+		margin-top: 3px;
+	}
+	.col-xs-3 img{
+		max-height: 5em;
+	}
+	.availability{
+		width: 95%;
+		margin: 0;
+		padding-top: 5%;
+	}
+	.location{
+		height: 24em;
+	}
+	.address{
+		padding: 0;
+		height: 24em;
+	}
 }
 
 ul{
 	list-style: none;
 }
 
-.availability{
-	width: 70%;
-}
+
 
 .right{
 	float: right;
