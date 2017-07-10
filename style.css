@@ -6,11 +6,20 @@ https://www.flickr.com/photos/saynototheoffice/7892935092/in/photolist-d2tmBN-TX
 	background-image: url("photos/main_image.jpg");
 	background-size: cover;
 	background-position: center;
+	z-index: -1;
 }
 
 .navbar {
 	height: 75px;
 	margin-bottom: 0;
+}
+
+.navbar-default .navbar-collapse {
+	background: #f8f8f8;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative; /* this can also be static */
 }
 
 h1{
@@ -25,16 +34,16 @@ h1{
 .location{
 	max-width: 30em;
 	height: 25em;
-	background: green;
+	border: 1px solid red;
 	margin: 0 auto;
 }
 
 .address{
 	max-width: 30em;
 	height: 25em;
-	background: yellow;
 	padding: 8% 0;
 	margin: 0 auto;
+	border: 1px solid black;
 }
 
 .availability{
@@ -65,7 +74,8 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		padding-top: 5%;
 	}
 	.location{
-		height: 27em;
+		height: 24em;
+		margin-top: 2em;
 	}
 	.address{
 		padding: 0;
@@ -87,11 +97,11 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		padding-top: 5%;
 	}
 	.location{
-		height: 27em;
+		height: 24em;
 	}
 	.address{
 		padding: 0;
-		height: 27em;
+		height: 24em;
 	}
 }
 
@@ -114,10 +124,11 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 	}
 	.location{
 		height: 24em;
+		margin-top: 2em;
 	}
 	.address{
 		padding: 0;
-		height: 24em;
+		height: 23em;
 	}
 }
 
