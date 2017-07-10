@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 	<title>Mirtha's Latin Cafe</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -21,11 +22,13 @@
 	    </div>
   	</div>
 </nav>
+<div class="bgimg container-fluid">
+	<h1 class="text-center">Mirtha's Latin Cafe</h1>
+</div>
 <div class="container">
 	<div class="row">
 	<!-- Put a background image here -->
 		<div class="col-xs-12">
-			<h1 class="text-center">Mirtha's Latin Cafe</h1>
 			<p>Mirtha's is what you get when you mix a Dominican and a Polk County native. 
 We are a family run restaurant in the town of Dundee. We proudly serve our delicious meals to our community with our Dominican and Southern hospitality. Come enjoy some Dominican, Puerto Rican, and Cuban dishes. Leave some space for the coconut flan or bread pudding!</p>
 		</div>
@@ -94,7 +97,11 @@ We are a family run restaurant in the town of Dundee. We proudly serve our delic
 		<h2 class="text-center">Where are we?</h2>
 		<div id="location">
 			<div class="col-md-6">
-				<div class="location">Location map goes here. To the left!</div>
+				<div class="location">
+					<div id="map">
+					</div>
+					<a class="btn btn-primary btn-block" href="https://www.google.com/maps/place/28%C2%B001'02.3%22N+81%C2%B037'49.7%22W/@28.017307,-81.6310778,18z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d28.017307!4d-81.630484" target="blank">Get directions</a>
+				</div>
 			</div>
 		</div>
 		<div  id="hours">
@@ -128,8 +135,16 @@ We are a family run restaurant in the town of Dundee. We proudly serve our delic
 		<p>Facebook: www.facebook.com/MirthasLatinCafe</p>
 	</div>
 </div>
+<footer>
+	<p>Page created by Christopher Tiller</p>
+	<p>See the actual restaurant page at ""</p>
+	<p>Images can be attributed to "" and ""</p>
+</footer>
 <script type="text/javascript" src="jquery/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdiDIhSa2ohMMYQaNtQrL4pk9wSlZRicQ&callback=initMap">
+</script>
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

@@ -233,6 +233,17 @@ populateMeal(kids, additionalTab);
 populateMeal(drinks, drinkTab);
 populateMeal(desserts, dessertTab);
 
+// Running the google maps API.
 
-// // Should also be part of function.
-// mealTab.innerHTML = mealList;
+// function initMap(){
+// 	console.log("Initialized!");
+// 	var loc = {lat: 28.017307, lng: -81.630484 };
+// 	new google.maps.Map(document.getElementById("map"), {zoom: 6, center: loc });
+// 	var marker = new google.maps.Marker({ position: loc, map: map });
+// }
+
+function initMap() { 
+	var loc = {lat: 28.017307, lng: -81.630484 }; 
+	var map = new google.maps.Map(document.getElementById('map'), { zoom: 17, center: loc });
+	var marker = new google.maps.Marker({ position: loc, map: map });
+}

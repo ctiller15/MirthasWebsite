@@ -1,3 +1,22 @@
+/*Image created by Jonathan Pintas, at 
+https://www.flickr.com/photos/saynototheoffice/7892935092/in/photolist-d2tmBN-TXP7mM-r2Yxgm-6RBjr-5ye8qn-RQ4MtU-9UvB6G-asUgUo-SRtfrU-96mCt3-biWRMH-fAxfCm-Rz5Pj5-6Gcxj-9TKxmV-RWXxuT-soBrHf-aXhzz2-mPMT3J-eg7yNF-b2Gj7i-ej3CDt-8mdzY7-5FW9sp-6hKnhB-bw9pAn-d3kBV1-RPL8st-eUrHNy-anpoqa-bBBEFi-79QdPu-agFoMV-njFDJ8-mh43mA-bntoHy-RXTwuE-9qb7vJ-d3kBuN-bzPJBP-98zLN1-6hKmv4-SVHis8-bLCKiV-enpJKD-7a927D-8BTtb6-SsNj2e-99NUTq-bV7Y8J
+*/
+
+.bgimg{
+	background-image: url("photos/main_image.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+	height: 75px;
+	margin-bottom: 0;
+}
+
+h1{
+	height: 300px;
+}
+
 #main-menu{
 	height: 50em;
 	margin: 0 auto;
@@ -21,6 +40,12 @@
 .availability{
 	width: 70%;
 	margin: auto 8%;
+}
+
+#map{
+	width: 100%;
+	height: 300px;
+	background: gray;
 }
 /*Testing out media queries to do the fine-tweaking on the responsive aspects.
 Find out how media queries work in terms of the cascade!
