@@ -2,8 +2,12 @@
 https://www.flickr.com/photos/saynototheoffice/7892935092/in/photolist-d2tmBN-TXP7mM-r2Yxgm-6RBjr-5ye8qn-RQ4MtU-9UvB6G-asUgUo-SRtfrU-96mCt3-biWRMH-fAxfCm-Rz5Pj5-6Gcxj-9TKxmV-RWXxuT-soBrHf-aXhzz2-mPMT3J-eg7yNF-b2Gj7i-ej3CDt-8mdzY7-5FW9sp-6hKnhB-bw9pAn-d3kBV1-RPL8st-eUrHNy-anpoqa-bBBEFi-79QdPu-agFoMV-njFDJ8-mh43mA-bntoHy-RXTwuE-9qb7vJ-d3kBuN-bzPJBP-98zLN1-6hKmv4-SVHis8-bLCKiV-enpJKD-7a927D-8BTtb6-SsNj2e-99NUTq-bV7Y8J
 */
 
+body{
+	font-family: Lato;
+}
+
 .bgimg{
-	height: 300px;
+	height: 250px;
 	background-image: url("photos/main_image.jpg");
 	background-size: cover;
 	background-position: center;
@@ -23,13 +27,42 @@ https://www.flickr.com/photos/saynototheoffice/7892935092/in/photolist-d2tmBN-TX
   position: relative; /* this can also be static */
 }
 
+/*.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}*/
+
 h1{
 	line-height: 200px;
+	color: white;
+    text-shadow:
+    -1px -1px 5px #000,
+    1px -1px 5px #000,
+    -1px 1px 5px #000,
+    1px 1px 5px #000;  	
+}
+
+.col-xs-12 p{
+	margin-top: 2em;
+	font-size: 1.2em;
 }
 
 #main-menu{
 	height: 50em;
 	margin: 0 auto;
+}
+
+.nav.nav-tabs{
+	font-size: 1.2em;
+}
+
+li.col-sm-6{
+	font-size: 1.1em;
 }
 
 .location{
@@ -62,10 +95,18 @@ Find out how media queries work in terms of the cascade!
 
 A LOT of unncecessarily repeated code here. Refactor immediately!*/
 @media only screen and (min-width : 0px) and (max-width : 480px) {
+	.bgimg {
+	}
+
 	h1{
 		font-size: 2.3em;
 		font-weight: bold;
 	}
+	.row h2 {
+		font-size: 2.9em;
+		font-weight: bold;
+	}
+
 	li.col-sm-6{
 		height: 5em;
 		margin-top: 3px;
@@ -93,6 +134,16 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		font-size: 4em;
 		font-weight: bold;
 	}
+
+	#main-menu{
+		height: 55em;
+	}
+
+	.row h2 {
+		font-size: 2.9em;
+		font-weight: bold;
+	}
+
 	li.col-sm-6{
 		height: 6em;
 		margin-top: 3px;
@@ -120,8 +171,13 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		font-weight: bold;
 	}
 
+	.row h2 {
+		font-size: 2.9em;
+		font-weight: bold;
+	}	
+
 	#main-menu{
-		height: 35em;
+		height: 39em;
 	}
 
 	li.col-sm-6{
@@ -151,8 +207,14 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		font-size: 6em;
 		font-weight: bold;
 	}
+
+	.row h2 {
+		font-size: 2.9em;
+		font-weight: bold;
+	}
+
 	#main-menu{
-		height: 35em;
+		height: 40em;
 	}
 
 	li.col-sm-6{
@@ -181,8 +243,14 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		font-size: 7em;
 		font-weight: bold;
 	}
+
+	.row h2 {
+		font-size: 2.9em;
+		font-weight: bold;
+	}
+
 	#main-menu{
-		height: 35em;
+		height: 40em;
 	}
 
 	li.col-sm-6{
