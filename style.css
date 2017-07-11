@@ -84,6 +84,16 @@ li.col-sm-6{
 	width: 70%;
 	margin: auto 8%;
 }
+.availability p{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.availability h4{
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+}
 
 #map{
 	width: 100%;
@@ -331,8 +341,14 @@ A LOT of unncecessarily repeated code here. Refactor immediately!*/
 		font-size: 8em;
 		font-weight: bold;
 	}
+
+	.row h2 {
+		font-size: 4em;
+		font-weight: bold;
+	}
+
 	#main-menu{
-		height: 35em;
+		height: 43em;
 	}
 
 	li.col-sm-6{
